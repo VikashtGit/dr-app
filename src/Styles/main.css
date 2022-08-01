@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+:root{
+  --mainColor: blue;
+  --mainColorLight: lightblue;
+  --secondaryColor: red;
+  --textColor: rgb(48, 44, 44);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 2rem;
+  background-color: white;
+  color: var(--textColor);
+}
+
+nav a{
+  margin: 0 0.4rem;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: var(--secondaryColor);
+}
+
+header .nav-btn{
+  padding: 2px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+visibility: hidden;
+opacity: 0;
+
+}
+
+@media only screen and (max-width: 1024px){
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav{
+    transform: none;
+  }
+}
+
+nav .nav-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.vikash{
+  background-color: whitesmoke;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* .vikash1{
+  
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  
+} */
+
+.bg{
+  background-color: rgb(248, 242, 242);
+}
+
+.card{
+  border: 1px rigid burlywood;
+  background-color: rgb(248, 242, 242);
+}
+
+.button2{
+  color:black;
+  border-radius: 50%;
+}
+
+.Img{
+  visibility: inherit;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+  
